@@ -1,0 +1,207 @@
+:root {
+    --primary-color: rgb(1, 10, 19);
+    --secondary-color: rgb(255, 255, 255);
+    --primary-menu-color: rgb(17, 17, 17);
+    --secondary-menu-color: rgb(25, 25, 25);
+    --tertiary-menu-color: rgb(8, 180, 175);
+    --primary-font-color: rgb(200, 155, 60);
+    --secondary-font-color: rgb(0, 0, 0);
+    --tertiary-font-color: rgb(255, 255, 255);
+    --gap: 3rem;
+}
+
+@font-face {
+    font-family: 'Lol_font';
+    src: url('/BeaufortforLOL-Bold.ttf') format('truetype'), url('/Fonte/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-Style: normal;
+}
+
+@font-face {
+    font-family: 'Spiegel';
+    src: url('/Fonte/Spiegel_font/spiegel.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Spiegel', Times, Serif;
+}
+
+
+body {
+    font-family: 'Lol_font', Times, serif;
+    font-size: 2rem;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Lol_font', Times, serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+p {
+    margin-bottom: 2rem;
+}
+
+.primary-bg {
+    background: var(--primary-color);
+    color: var(--primary-font-color);
+}
+
+.secondary-bg {
+    background: var(--secondary-color-color);
+    color: var(--secondary-font-color);
+}
+
+.menu {
+    background: var(--primary-menu-color);
+    color: var(--primary-font-color);
+    border-bottom: 0.1rem solid var(--secondary-menu-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-content {
+    width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu-logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.menu ul li a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-family: 'Spiegel', Times, serif;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: ' ';
+    position: absolute;
+    bottom: 1rem;
+    left: 25%;
+    width: 0%;
+    height: 0.3rem;
+    background: var(--tertiary-menu-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 5.9rem;
+}
+
+.inicio-content {
+    position: relative;
+    top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.concepts-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.inicio-text-content,
+.inicio-img,
+.concepts-text-content,
+.concepts-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.concepts-text-content,
+.concepts-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center center;
+}
+
+.intro-img img,
+.intro-img svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.concepts-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.concepts ul {
+    list-style: circle;
+}
+.conhecimento_background {
+    background: url(/assets/Img/Imagem_top_lane.png);
+    background-size:cover;
+    color: var(--secondary-color);
+}
