@@ -204,7 +204,7 @@ p {
     list-style: circle;
 }
 .conhecimento_background {
-    background: url("src/Assets/Img");
+    background: url("src/Assets/Img/Imagem_top_lane.png");
     background-size:cover;
     color: var(--secondary-color);
 }
