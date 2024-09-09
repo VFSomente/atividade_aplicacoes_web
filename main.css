@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: 'Lol_font';
-    src: url('src/Fonte/BeaufortForLoL-TTF/') format('truetype'), url('src/Fonte/BeaufortForLoL-OTF/') format('opentype');
+    src: url('src/Fonte/BeaufortForLoL-TTF/BeaufortforLOL-BoldItalic.ttf') format('truetype'), url('src/Fonte/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf') format('opentype');
     font-weight: normal;
     font-Style: normal;
 }
 
 @font-face {
     font-family: 'Spiegel';
-    src: url('src/Fonte/Spiegel_font/') format('truetype');
+    src: url('src/Fonte/Spiegel_font/spiegel.ttf') format('truetype');
 }
 
 * {
