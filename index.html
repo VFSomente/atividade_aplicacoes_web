@@ -10,12 +10,14 @@
 </head>
 
 <body>
+    <input  id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"> </label>
     <aside class="menu">
         <div class="menu-content main-content">
             <a target="_blank" href="https://www.leagueoflegends.com/pt-br/"><img class="menu-logo"
                     src="src/Assets/Img/LoL_Icon_Flat_GOLD.png" alt="League of Legends LOGO"></a>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#Inicio">Início</a></li>
                     <li><a href="#Conhecimentos">Conhecimentos</a></li>
                     <li><a href="#select-champion">Escolha seu campeão!</a></li>
@@ -120,6 +122,7 @@
             </div>
         </div>
     </footer>
+    <a class="back-to-top" href="#Inicio" >➤</a>
 </body>
 
 </html>
