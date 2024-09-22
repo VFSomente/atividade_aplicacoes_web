@@ -7,7 +7,8 @@
     --primary-font-color: rgb(200, 155, 60);
     --secondary-font-color: rgb(0, 0, 0);
     --tertiary-font-color: rgb(255, 255, 255);
-    --quaternary-font-color: ;
+    --primary-button-color:rgb(206,178,123);
+    --secondary-button-color:rgb(123,170,99);
     --gap: 3rem;
 }
 
@@ -105,8 +106,8 @@ li {
     background-size: cover;
 }
 .secondary-bg {
-    background: var(--secondary-color-color);
-    color: var(--secondary-font-color);
+    background: var(--primary-color);
+    color: var(--primary-font-color);
     background-position: center center;
     background-size: cover;
 }
@@ -289,11 +290,44 @@ min-height: 100vh;
     margin-left: -28rem; */
 }
 
+.runas-content h1 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.runa-botao {
+    color:var(--secondary-font-color) ;
+    font: inherit;
+}
+.runas-precisao-primeira-fileira,.runas-precisao-segunda-fileira,.runas-precisao-terceira-fileira, .runa-determinacao-primeira-fileira,
+.runa-determinacao-segunda-fileira, .runa-determinacao-terceira-fileira{
+    display: flex;
+    gap: 6.8rem;
+    margin-left:3.5rem;
+    margin-bottom: 2rem;
+}
+.runa-determinacao-primeira-fileira,
+.runa-determinacao-segunda-fileira, .runa-determinacao-terceira-fileira{
+    margin-bottom: 20rem;
+    margin-left: 3.5rem;
+}
 
+.runa-determinacao-secundaria {
+    margin-left: 50rem;
+    margin-top: -27rem;
+}
 
-
-
-
+ article .precision img {
+    height: 10rem;
+    margin-left: 12.5rem;
+}
+article .determination img {
+    height: 10rem;
+    margin-left: 2.3rem;
+    margin-right: 0;
+    align-items: end;
+    margin-top: -30rem;
+    margin-bottom: 4.5rem;
+}
 
 
 
