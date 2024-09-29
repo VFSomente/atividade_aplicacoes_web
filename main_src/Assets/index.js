@@ -1,14 +1,26 @@
-        // Seleciona os elementos
-        const imagem = document.getElementById("imagem");
-        const audio = document.getElementById("meuAudio");
+// Seleciona os dois botões
+const botoes = document.querySelectorAll(".botao-alternar");
+const conteudos = document.querySelectorAll(".conteudo");
 
-        // Quando o mouse passar sobre a imagem, o áudio toca
-        imagem.addEventListener("mouseenter", () => {
-            audio.play();
-        });
+// Adiciona um evento de clique a cada botão
+botoes.forEach((botao, indice) => {
+    botao.addEventListener("click", () => {
+        // Remove a classe "ativo" do conteúdo atualmente ativo
+        const conteudoAtivo = document.querySelector(".conteudo.ativo");
+        if (conteudoAtivo) {
+            conteudoAtivo.classList.remove("ativo");
+        }
 
-        // Quando o mouse sair da imagem, o áudio pausa
-        imagem.addEventListener("mouseleave", () => {
-            audio.pause();
-            audio.currentTime = 0; // Volta ao início
-        });
+        // Remove a classe "ativo" do botão atualmente ativo
+        const botaoAtivo = document.querySelector(".botao-alternar.ativo");
+        if (botaoAtivo) {
+            botaoAtivo.classList.remove("ativo");
+        }
+
+        // Adiciona a classe "ativo" ao botão clicado
+        botao.classList.add("ativo");
+
+        // Adiciona a classe "ativo" ao conteúdo correspondente
+        conteudos[indice].classList.add("ativo");
+    });
+});
