@@ -15,10 +15,10 @@
     <aside class="menu">
         <div class="menu-content main-content">
             <a target="_blank" href="https://www.leagueoflegends.com/pt-br/"><img class="menu-logo"
-                    src="main_src/Assets/Img/LoL_Icon_Flat_GOLD.png" alt="League of Legends LOGO"></a>
+                    src="/main_src/Assets/Img/LoL_Icon_Flat_GOLD.png" alt="League of Legends LOGO"></a>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="index.html"> Voltar ao início</a></li>
+                    <li><a href="/index.html"> Voltar ao início</a></li>
                     <li><a href="#Inicio">História</a></li>
                     <li><a href="#abilities"> Habilidades </a></li>
                     <li><a href="#runas"> Runas </a></li>
@@ -41,7 +41,7 @@
     <section id="abilities" class="conhecimento_background section">
             <div class="habilidades">
                 <div class="champion selecionado">
-                       <video  class="video" src="main_src/gwen_page/Gwen/Habilidades/ability_0887_P1.mp4" autoplay loop muted></video>
+                       <video  class="video" src="Gwen/Habilidades/ability_0887_P1.mp4" autoplay loop muted></video>
                        <div class="champion-content">
                            <h1> Mil Retalhos </h1>
                            <h2> Passiva </h2>
@@ -49,7 +49,7 @@
                         </div>
                 </div>
                 <div class="champion">
-                        <video class="video" src="main_src/gwen_page/Gwen/Habilidades/ability_0887_Q1.mp4" autoplay loop muted></video>
+                        <video class="video" src="Gwen/Habilidades/ability_0887_Q1.mp4" autoplay loop muted></video>
                         <div class="champion-content">
                             <h1> Corte e Recorte </h1>
                             <h2> Q </h2>
@@ -57,7 +57,7 @@
                          </div>
                 </div>
                 <div class="champion">
-                        <video class="video" src="main_src/gwen_page/Gwen/Habilidades/ability_0887_W1.mp4" autoplay loop muted></video>
+                        <video class="video" src="Gwen/Habilidades/ability_0887_W1.mp4" autoplay loop muted></video>
                         <div class="champion-content">
                             <h1> Névoa Sagrada </h1>
                             <h2> W </h2>
@@ -65,7 +65,7 @@
                          </div>
                 </div>
                 <div class="champion">
-                        <video class="video" src="main_src/gwen_page/Gwen/Habilidades/ability_0887_E1.mp4" autoplay loop muted></video>
+                        <video class="video" src="Gwen/Habilidades/ability_0887_E1.mp4" autoplay loop muted></video>
                         <div class="champion-content">
                             <h1> Avanço Afiado </h1>
                             <h2> E </h2>
@@ -74,7 +74,7 @@
                          </div>
                 </div>
                 <div class="champion">
-                        <video class="video" src="main_src/gwen_page/Gwen/Habilidades/ability_0887_R1.mp4" autoplay loop muted></video>
+                        <video class="video" src="Gwen/Habilidades/ability_0887_R1.mp4" autoplay loop muted></video>
                         <div class="champion-content">
                             <h1> Ponto-Cruz</h1>
                             <h2> R </h2>
@@ -84,15 +84,15 @@
                 <div class="botoes">
                     <ul>
 
-                        <li><button class="botao selecionado"><img src="main_src/gwen_page/Gwen/Previews/Gwen_Passive.png"></button></li>
+                        <li><button class="botao selecionado"><img src="Gwen/Previews/Gwen_Passive.png"></button></li>
 
-                        <li><button class="botao"><img src="main_src/gwen_page/Gwen/Previews/GwenQ.png"></button></li>
+                        <li><button class="botao"><img src="Gwen/Previews/GwenQ.png"></button></li>
 
-                        <li><button class="botao"><img src="main_src/gwen_page/Gwen/Previews/GwenW.png" alt=""></button></li>
+                        <li><button class="botao"><img src="Gwen/Previews/GwenW.png" alt=""></button></li>
 
-                        <li><button class="botao"><img src="main_src/gwen_page/Gwen/Previews/GwenE.png" alt=""></button></li>
+                        <li><button class="botao"><img src="Gwen/Previews/GwenE.png" alt=""></button></li>
 
-                        <li><button class="botao"><img src="main_src/gwen_page/Gwen/Previews/GwenR.png" alt=""></button></li>
+                        <li><button class="botao"><img src="Gwen/Previews/GwenR.png" alt=""></button></li>
 
                     </ul>
                 </div>
@@ -100,147 +100,150 @@
     </section>
     <section id="runas" class="secondary-bg section">
 
-        <article class="svelte-1vq36jh">
+        <article>
             <section class="main-content">
                 <h1 class="runas-h1">RUNAS</h1>
                 <section class="botoes-runas">
-                    <button class="botao-lutador">CONQUISTADOR</button>
+                    <button class="botao-lutador">CONQUISTADOR & DETERMINAÇÃO</button>
+                    <button class="botao-lutador">CONQUISTADOR & INSPIRAÇÃO</button>
                 </section>
                 
                 <main>
                     <section class="lutador-arvore">
-                        <article class="svelte-ctwuib">
-                            <main class="rune-main">
-                                <object class="rune-icon"
-                                    data="main_src/Runas/Runas_Jax/_precision.0f9af002.svg"></object>
-                                <section class="rune-primary">
+                        <article>
+                            <main class="runaPrincipal">
+                                <object class="iconeRuna"
+                                    data="/main_src/Runas/precisao.svg"></object>
+                                <section class="runaPrimaria">
                                     <figure><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/presstheattack.32f5e9e3.png"
-                                            alt="presstheattack"></figure>
+                                            src="/main_src/Runas/Runas_geral/Precision/pressioneOAtaque.png"
+                                            alt="Pressione o Ataque"></figure>
                                     <figure><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/fleetfootwork.1bc5383a.png"
-                                            alt="fleetfootwork">
+                                            src="/main_src/Runas/Runas_geral/Precision/ritmoFatal.png"
+                                            alt="Ritmo Fatal"></figure>
+                                    <figure><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/agilidadeNosPes.png"
+                                            alt="Agilidade nos Pés">
                                     </figure>
-                                    <figure><img src="main_src/Runas/Runas_geral/Precision/conqueror.1d57cc59.png"
-                                            alt="conqueror">
+                                    <figure><img src="/main_src/Runas/Runas_geral/Precision/conquistador.png"
+                                            alt="Conquistador">
                                     </figure>
                                 </section>
-                                <section class="rune-section">
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/Absorb_Life_rune.png"
-                                            alt="overheal"></figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/triumph.80bd5fc9.png"
-                                            alt="triumph"></figure>
-                                    <figure class="rune-small"><img class="runa-selecionada"
-                                            src="main_src/Runas/Runas_geral/Precision/presenceofmind.ef9b62e9.png"
-                                            alt="presenceofmind"></figure>
+                                <section class="sessaoRuna">
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/absorcaoVital.png"
+                                            alt="Absorção Vital"></figure>
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/triunfo.png"
+                                            alt="triunfo"></figure>
+                                    <figure class="runaPequena"><img class="runa-selecionada"
+                                            src="/main_src/Runas/Runas_geral/Precision/presencaDeEspirito.png"
+                                            alt="Presença de Espírito"></figure>
                                 </section>
-                                <section class="rune-section">
-                                    <figure class="rune-small"><img class="runa-selecionada"
-                                            src="main_src/Runas/Runas_geral/Precision/legendalacrity.180c8c11.png"
-                                            alt="legendalacrity"></figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/Legend-_Haste_rune.png"
-                                            alt="legendtenacity"></figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/legendbloodline.e7e283af.png"
-                                            alt="legendbloodline"></figure>
+                                <section class="sessaoRuna">
+                                    <figure class="runaPequena"><img class="runa-selecionada"
+                                            src="/main_src/Runas/Runas_geral/Precision/lendaEspontaneidade.png"
+                                            alt="Lenda: Espontaneidade"></figure>
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/lendaAceleracao.png"
+                                            alt="Lenda: Aceleração"></figure>
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/lendaLinhagem.png"
+                                            alt="Lenda: Linhagem"></figure>
                                 </section>
-                                <section class="rune-section">
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/coupdegrace.f635bf1b.png"
+                                <section class="sessaoRuna">
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/golpeDeMisericordia.png"
                                             alt="coupdegrace">
                                     </figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Precision/cutdown.cc2ca5da.png"
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Precision/dilacerar.png"
                                             alt="cutdown"></figure>
-                                    <figure class="rune-small"><img class="runa-selecionada"
-                                            src="main_src/Runas/Runas_geral/Precision/laststand.f04e52f3.png"
-                                            alt="laststand">
+                                    <figure class="runaPequena"><img class="runa-selecionada"
+                                            src="/main_src/Runas/Runas_geral/Precision/ateAMorte.png"
+                                            alt="Até a Morte">
                                     </figure>
                                 </section>
                             </main>
                         </article>
-                        <div class="vertical-line svelte-ctwuib"></div>
-                        <article class="svelte-ctwuib">
-                            <main class="rune-main">
-                                <object class="rune-icon"
-                                    data="main_src/Runas/Runas_Jax/_resolve.c30b6598.svg"></object>
+                        <article>
+                            <main class="runaPrincipal">
+                                <object class="iconeRuna"
+                                    data="/main_src/Runas/determinacao.svg"></object>
 
-                                <section class="rune-section">
-                                    <figure class="rune-small"><img class="runa-selecionada"
-                                            src="main_src/Runas/Runas_geral/Determination/demolish.758197f6.png"
-                                            alt="demolish"></figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/fontoflife.d7ce194e.png"
-                                            alt="fontoflife">
+                                <section class="sessaoRuna">
+                                    <figure class="runaPequena"><img class="runa-selecionada"
+                                            src="/main_src/Runas/Runas_geral/Determination/demolir.png"
+                                            alt="demolir"></figure>
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/fonteDaVida.png"
+                                            alt="Fonte da Vida">
                                     </figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/mirrorshell.186a63b6.png"
-                                            alt="mirrorshell">
-                                    </figure>
-                                </section>
-                                <section class="rune-section">
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/conditioning.83d2b1c1.png"
-                                            alt="conditioning">
-                                    </figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/download.png"
-                                            alt="secondwind"></figure>
-                                    <figure class="rune-small"><img class="runa-selecionada"
-                                            src="main_src/Runas/Runas_geral/Determination/boneplating.4c2888fb.png"
-                                            alt="boneplating">
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/golpeDeEscudo.png"
+                                            alt="Golpe de Escudo">
                                     </figure>
                                 </section>
-                                <section class="rune-section">
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/overgrowth.0dcfb36a.png"
-                                            alt="overgrowth">
+                                <section class="sessaoRuna">
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/condicionamento.png"
+                                            alt="condicionamento">
                                     </figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/revitalize.33cab726.png"
-                                            alt="revitalize">
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/ventosRevigorantes.png"
+                                            alt="Ventos Revigorantes"></figure>
+                                    <figure class="runaPequena"><img class="runa-selecionada"
+                                            src="/main_src/Runas/Runas_geral/Determination/ossoRevestido.png"
+                                            alt="Osso Revestido">
                                     </figure>
-                                    <figure class="rune-small"><img class="nao-selecionado"
-                                            src="main_src/Runas/Runas_geral/Determination/unflinching.b3f10194.png"
-                                            alt="unflinching">
+                                </section>
+                                <section class="sessaoRuna">
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/crescimentoExcessivo.png"
+                                            alt="Crescimento Excessivo">
+                                    </figure>
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/revitalizar.png"
+                                            alt="Revitalizar">
+                                    </figure>
+                                    <figure class="runaPequena"><img class="nao-selecionado"
+                                            src="/main_src/Runas/Runas_geral/Determination/inabalavel.png"
+                                            alt="Inabalável">
                                     </figure>
                                 </section>
                             </main>
-                            <main class="rune-main status-main">
-                                <section class="rune-section">
-                                    <figure class="status-small"><img class="not-selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Adaptive_Force.png"
+                            <main class="runaPrincipal statusPrincipal">
+                                <section class="sessaoRuna">
+                                    <figure class="statusPequeno"><img class="naoEscolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/forcaAdaptativa.png"
                                             alt="Dano Adaptativo"></figure>
-                                    <figure class="status-small"><img class="selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Attack_Speed.png"
+                                    <figure class="statusPequeno"><img class="escolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/velocidadeDeAtaque.png"
                                             alt="Velocidade de ataque"></figure>
-                                    <figure class="status-small"><img class="not-selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/haste.png"
+                                    <figure class="statusPequeno"><img class="naoEscolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/aceleracao.png"
                                             alt="Aceleração de habilidade"></figure>
                                 </section>
-                                <section class="rune-section">
-                                    <figure class="status-small"><img class="selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Adaptive_Force.png"
+                                <section class="sessaoRuna">
+                                    <figure class="statusPequeno"><img class="escolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/forcaAdaptativa.png"
                                             alt="Dano Adaptativo"></figure>
-                                    <figure class="status-small"><img class="not-selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Movement_Speed.png"
+                                    <figure class="statusPequeno"><img class="naoEscolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/velocidadeDeMovimento.png"
                                             alt="Velocidade de movimento"></figure>
-                                    <figure class="status-small"><img class="not-selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Health_Scaling.png"
+                                    <figure class="statusPequeno"><img class="naoEscolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/EscalomentoComVida.png"
                                             alt="Escalonamento com vida"></figure>
                                 </section>
-                                <section class="rune-section">
-                                    <figure class="status-small"><img class="selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Health.png" alt="vida Bônus">
+                                <section class="sessaoRuna">
+                                    <figure class="statusPequeno"><img class="escolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/vida.png" alt="vida Bônus">
                                     </figure>
-                                    <figure class="status-small"><img class="not-selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Tenacity.png" alt="Tenacidade">
+                                    <figure class="statusPequeno"><img class="naoEscolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/tenacidade.png" alt="Tenacidade">
                                     </figure>
-                                    <figure class="status-small"><img class="not-selected"
-                                            src="main_src/Runas/Runas_geral/status-runes/Health_Scaling.png"
+                                    <figure class="statusPequeno"><img class="naoEscolhida"
+                                            src="/main_src/Runas/Runas_geral/status-runes/EscalomentoComVida.png"
                                             alt="Escalonamento com vida"></figure>
                                 </section>
                             </main>
@@ -253,42 +256,29 @@
             </section>
         </article>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer>
         <div class="footer concepts-text-content">
             <div class="footer-content">
                 <p>Desenvolvido por Victor Fernandes & Sabrina Andrade</p>
                 <ul>
                     <li><a target="_blank" href="https://instagram.com/vfsomente">
-                            <img align="center" alt="Instagram Logotipo" height="25" width="25"
-                                src="https://static.cdninstagram.com/rsrc.php/v3/yR/r/lam-fZmwmvn.png"> Instagram</a>
+                            <img align="center" alt="Instagram Logotipo" height="30" width="30"
+                                src="https://static.cdninstagram.com/rsrc.php/v3/yR/r/lam-fZmwmvn.png"></a>
                     </li>
                     <li><a target="_blank" href="https://wa.me/5583996224883">
-                            <img align="center" alt="Whatsapp Logotipo" height="25" width="25"
-                                src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png"> Whatsapp</a>
+                            <img align="center" alt="Whatsapp Logotipo" height="30" width="30"
+                                src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png"></a>
                     </li>
                     <li><a target="_blank" href="https://github.com/VFSomente">
-                            <img align="center" alt="Github Logotipo" height="25" width="25"
-                                src="https://github.com/fluidicon.png"> Github</a>
+                            <img align="center" alt="Github Logotipo" height="30" width="30"
+                                src="https://github.com/fluidicon.png"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
     <a class="back-to-top" href="#Inicio">❯</a>
-    <script src="main_src/jax_page/index.js"></script>
+    <script src="/main_src/Assets/js/habilidades.js"></script>
 </body>
 
 </html>
