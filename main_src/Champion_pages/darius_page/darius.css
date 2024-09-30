@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(1, 10, 19);
     --secondary-color: rgb(255, 255, 255);
+    --tertiary-color: rgb(220,189,114);
     --primary-menu-color: rgb(17, 17, 17);
     --secondary-menu-color: rgb(25, 25, 25);
     --tertiary-menu-color: rgb(8, 180, 175);
@@ -15,14 +16,14 @@
 
 @font-face {
     font-family: 'Lol_font';
-    src: url('main_src/Fonte/BeaufortForLoL-TTF/BeaufortforLOL-BoldItalic.ttf') format('truetype'), url('src/Fonte/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf') format('opentype');
+    src: url('/main_src/Fonte/BeaufortForLoL-TTF/BeaufortforLOL-BoldItalic.ttf') format('truetype'), url('src/Fonte/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf') format('opentype');
     font-weight: normal;
     font-Style: normal;
 }
 
 @font-face {
     font-family: 'Spiegel';
-    src: url('main_src/Fonte/Spiegel_font/spiegel.ttf') format('truetype');
+    src: url('/main_src/Fonte/Spiegel_font/spiegel.ttf') format('truetype');
 }
 
 * {
@@ -65,16 +66,16 @@ h2 {
     margin-bottom: 2.6rem;
     text-transform: uppercase;
     line-height: 1.2;
-    margin-left: 10rem;
+    margin-left: 7rem;
 }
 
 h3 {
     font-size: 3.2rem;
     text-transform: uppercase;
-    margin-top: 12rem;
     margin-bottom: 2rem;
+    margin-top: 16rem;
     color: var(--tertiary-font-color);
-    margin-left: 5rem;
+    margin-left: 4rem;
 }
 
 h4 {
@@ -102,7 +103,7 @@ li {
 }
 
 .primary-bg {
-    background: url('main_src/renekton_page/Renekton.jpg');
+    background: url('Darius/Darius.jpg');
     color: var(--primary-font-color);
     background-position: center center;
     background-size: cover;
@@ -207,8 +208,9 @@ li {
     margin-top: -20rem;
     margin-left: -9rem;
     margin-bottom: -1rem;
-    margin-right: -11rem;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 24.44%, rgba(0, 0, 0, 0.6) 56.63%);
+    margin-right: -10rem;
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.835171568627451) 91%, rgba(0,0,0,0) 100%);
 }
 .habilidades::after {
 content: "";
@@ -276,13 +278,12 @@ min-height: 100vh;
     }
 .champion-content h1{
     font-size: 4rem;
-    /* margin-left: 5rem;
-    margin-bottom: 2rem; */
+    margin-left: -3rem;
 
 }
 .champion-content h2{
     font-size: 4rem;
-    margin-right: 20rem;
+    margin-right: 14rem;
     color: var(--primary-font-color);
 }
 .champion-content p{
@@ -291,32 +292,32 @@ min-height: 100vh;
     padding-left: 30rem;
     margin-left: -28rem; */
 }
-.rune-main {
+.runaPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.rune-main img {
+.runaPrincipal img {
     width: 100%;
     height: auto;
 }
 
-.rune-main img.not-selected {
+.runaPrincipal img.naoEscolhida {
     filter: grayscale(100%) opacity(50%)
 }
 
-.rune-main img.selected {
-    border: 2 px solid #9999bb;
+.runaprincipal img.escolhida {
+    border: 2px solid var(--tertiary-color);
     border-radius: 50%
 }
 
-object.rune-icon {
+object.iconeRuna {
     width: calc(50px + 1vw);
     margin-bottom: 24px;
 }
 
-section.rune-section {
+section.sessaoRuna {
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -324,7 +325,7 @@ section.rune-section {
     margin-bottom: calc(14px + .3vw);
 }
 
-section.rune-primary {
+section.runaPrimaria {
     display: flex;
     justify-content: space-between;
     width: 75%;
@@ -333,26 +334,26 @@ section.rune-primary {
     padding-bottom: 12px;
 }
 
-section.rune-primary figure {
+section.runaPrimaria figure {
     width: 200px;
 }
 
-figure.rune-small {
+figure.runaPequena {
     width: 25%;
     min-width: 28px
 }
 
-figure.status-small {
+figure.statusPequeno {
     width: 15%;
     min-width: 22px;
     margin: 0 5px;
 }
 
-figure.status-small img.selected {
+figure.statusPequeno img.escolhido {
     background-color: #0000003f
 }
 
-.status-main section {
+.statusPrincipal section {
     margin-bottom: .3vw
 }
 .runas-h1 {
@@ -380,11 +381,11 @@ figure.status-small img.selected {
 }
 
 .botao-lutador {
-    background-color:var(--primary-button-color);  /* Cor do botão LUTADOR */
+    background-color: #d1a670; 
 }
 
 .botao-offtank {
-    background-color: var(--primary-button-color); /* Cor do botão OFFTANK */
+    background-color: var(--tertiary-button-color); 
 }
 .lutador-arvore {
     display: flex;
@@ -394,39 +395,18 @@ figure.status-small img.selected {
     gap: 2rem;
     }
 .runa-selecionada {
-    border: 0.2rem #9999bb solid;
+    border: 0.2rem var(--tertiary-color) solid;
     border-radius: 50%;
 }
 
 .nao-selecionado {
     filter: brightness(50%) opacity(50%);
 }
-
 .lutador-texto {
     margin-left: 83rem ;
-    margin-top: -40rem;
+    margin-top: -50rem;
     width: 30rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer-content {
     display: flex;
     align-items: center; 
