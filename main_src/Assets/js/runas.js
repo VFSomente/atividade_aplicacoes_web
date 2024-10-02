@@ -1,26 +1,19 @@
-// Seleciona os dois botões
-const botoes = document.querySelectorAll(".botao-alternar");
-const conteudos = document.querySelectorAll(".conteudo");
-
-// Adiciona um evento de clique a cada botão
-botoes.forEach((botao, indice) => {
-    botao.addEventListener("click", () => {
-        // Remove a classe "ativo" do conteúdo atualmente ativo
-        const conteudoAtivo = document.querySelector(".conteudo.ativo");
-        if (conteudoAtivo) {
-            conteudoAtivo.classList.remove("ativo");
-        }
-
-        // Remove a classe "ativo" do botão atualmente ativo
-        const botaoAtivo = document.querySelector(".botao-alternar.ativo");
-        if (botaoAtivo) {
-            botaoAtivo.classList.remove("ativo");
-        }
-
-        // Adiciona a classe "ativo" ao botão clicado
-        botao.classList.add("ativo");
-
-        // Adiciona a classe "ativo" ao conteúdo correspondente
-        conteudos[indice].classList.add("ativo");
-    });
-});
+function showDiv(runa) {
+    let divs = document.querySelectorAll('.runa-desativada, .runa-ativada');
+    divs.forEach(div => div.classList.remove('runa-ativada')); // Remove 'runa-ativada' de todas
+    divs.forEach(div => div.classList.add('runa-desativada')); // Adiciona 'runa-desativada' em todas
+ 
+    switch (runa) {
+       case 'arvore-principal-runas':
+          document.getElementById('arvore-principal-runas').classList.add('runa-ativada');
+          document.getElementById('arvore-principal-runas').classList.remove('runa-desativada');
+          break;
+       case 'arvore-secundaria-runas':
+          document.getElementById('arvore-secundaria-runas').classList.add('runa-ativada');
+          document.getElementById('arvore-secundaria-runas').classList.remove('runa-desativada');
+          break;
+       default:
+          break;
+    }
+ }
+ 

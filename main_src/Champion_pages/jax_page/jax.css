@@ -218,6 +218,7 @@ li {
 }
 
 .habilidades::after {
+    z-index: -1;
     content: "";
     position: fixed;
     top: 0;
@@ -245,6 +246,15 @@ li {
 .champion.selecionado {
     display: block;
 
+}
+.runa-ativada {
+    display: block;
+}
+.runa-desativada {
+    display: none;
+}
+.runaNova {
+    border-radius: 50%;
 }
 
 .botoes {
@@ -398,15 +408,13 @@ figure.statusPequeno img.escolhido {
 
 .botao-lutador {
     background-color: #d1a670;
-    /* Cor do botão LUTADOR */
 }
 
 .botao-offtank {
     background-color: var(--secondary-button-color);
-    /* Cor do botão OFFTANK */
 }
 
-.arvore-principal-runas {
+.arvore-principal-runas, .arvore-secundaria-runas {
     display: flex;
     padding-top: 5rem;
     margin-left: 35rem;
@@ -423,9 +431,10 @@ figure.statusPequeno img.escolhido {
     filter: brightness(50%) opacity(50%);
 }
 
-.lutador-texto {
-    margin-left: 83rem;
-    margin-top: -40rem;
+.comousar {
+
+    margin-left: 5rem;
+    margin-top: -7rem;
     width: 30rem;
 }
 .footer-content {
