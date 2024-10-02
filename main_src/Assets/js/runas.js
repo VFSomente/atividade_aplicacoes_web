@@ -1,3 +1,4 @@
+
 function showDiv(runa) {
     let divs = document.querySelectorAll('.runa-desativada, .runa-ativada');
     divs.forEach(div => div.classList.remove('runa-ativada')); // Remove 'runa-ativada' de todas
@@ -16,4 +17,3 @@ function showDiv(runa) {
           break;
     }
  }
- 
