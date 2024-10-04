@@ -372,7 +372,7 @@ figure.statusPequeno img.escolhido {
     gap: 10px;
 }
 
-.botao-lutador, .botao-offtank {
+.botaoPrimario, .botaoSecundario {
     display: flex;
     justify-content: center;    
     align-items: center;        
@@ -388,31 +388,31 @@ figure.statusPequeno img.escolhido {
     cursor: pointer;    
 }
 
-.botao-lutador {
-    background-color: #d1a670; 
+.botaoPrimario {
+    background-color: var(--primary-button-color);
 }
 
-.botao-offtank {
+.botaoSecundario {
     background-color: var(--tertiary-button-color); 
 }
-.lutador-arvore {
+.arvore-principal-runas, .arvore-secundaria-runas {
     display: flex;
     padding-top: 5rem;
     margin-left: 35rem;
     margin-top: -15rem;
     gap: 2rem;
     }
-.runa-selecionada {
+.runaSelecionada {
     border: 0.2rem var(--tertiary-color) solid;
     border-radius: 50%;
 }
 
-.nao-selecionado {
+.naoSelecionado {
     filter: brightness(50%) opacity(50%);
 }
-.lutador-texto {
-    margin-left: 83rem ;
-    margin-top: -50rem;
+.comousar {
+    margin-left: 5rem;
+    margin-top: -7rem;
     width: 30rem;
 }
 .footer-content {

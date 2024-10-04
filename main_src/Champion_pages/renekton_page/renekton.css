@@ -212,6 +212,7 @@ li {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 24.44%, rgba(0, 0, 0, 0.6) 56.63%);
 }
 .habilidades::after {
+z-index: -1;
 content: "";
 position: fixed;
 top: 0;
@@ -316,6 +317,10 @@ object.iconeRuna {
     width: calc(50px + 1vw);
     margin-bottom: 24px;
 }
+object.dominacao {
+    width: calc(50px + 1vw);
+    margin-top: 8px;
+}
 
 section.sessaoRuna {
     display: flex;
@@ -356,6 +361,12 @@ figure.statusPequeno img.escolhido {
 .statusPrincipal section {
     margin-bottom: .3vw
 }
+.runa-desativada {
+    display: none;
+}
+.runa-ativada {
+    display: block;
+}
 .runas-h1 {
     margin-top: 5rem;
     margin-bottom: 3rem;
@@ -365,7 +376,7 @@ figure.statusPequeno img.escolhido {
     gap: 10px;
 }
 
-.botao-lutador, .botao-offtank {
+.botaoPrimario, .botaoSecundario {
     display: flex;
     justify-content: center;    
     align-items: center;        
@@ -377,35 +388,38 @@ figure.statusPequeno img.escolhido {
     font-size: 16px;       
     font-family: inherit;
     cursor: pointer;           
-    box-sizing: border-box;      
+    box-sizing: border-box;  
+    cursor: pointer;    
 }
 
-.botao-lutador {
-    background-color:var(--primary-button-color);  /* Cor do botão LUTADOR */
+.botaoPrimario {
+    background-color: var(--primary-button-color);
 }
 
-.botao-offtank {
-    background-color: var(--primary-button-color); /* Cor do botão OFFTANK */
+.botaoSecundario {
+    background-color: var(--primary-button-color); 
 }
-.lutador-arvore {
+.arvore-principal-runas, .arvore-secundaria-runas {
     display: flex;
     padding-top: 5rem;
     margin-left: 35rem;
     margin-top: -15rem;
     gap: 2rem;
     }
-.runa-selecionada {
+.runaPrincipal:hover, .runa-secudaria:hover {
+    transform: scale(1.05);
+    }
+.runaSelecionada {
     border: 0.2rem var(--tertiary-color) solid;
     border-radius: 50%;
 }
 
-.nao-selecionado {
+.naoSelecionado {
     filter: brightness(50%) opacity(50%);
 }
-
-.lutador-texto {
-    margin-left: 83rem ;
-    margin-top: -40rem;
+.comousar {
+    margin-left: 5rem;
+    margin-top: -7rem;
     width: 30rem;
 }
 .footer-content {
