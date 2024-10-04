@@ -408,8 +408,8 @@ figure.statusPequeno img.escolhido {
     border: 1px solid #000;
     font-size: 16px;
     font-family: inherit;
-    
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .botao-lutador {
