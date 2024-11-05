@@ -10,7 +10,7 @@
     --tertiary-font-color: rgb(255, 255, 255);
     --primary-button-color: rgb(206, 178, 123);
     --secondary-button-color: rgb(123, 170, 99);
-    --tertiary-button-color: rgb(115,130,231);
+    --tertiary-button-color: rgb(115, 130, 231);
     --gap: 3rem;
 }
 
@@ -217,6 +217,7 @@ top: 0;
 left: 0;
 width: 80vw;
 min-height: 100vh;
+z-index: -1;
 }
 .habilidades {
     background: rgb(0,0,0);
@@ -235,8 +236,17 @@ min-height: 100vh;
 
 .champion.selecionado {
     display: block;
-
 }
+.runa-ativada {
+    display: block;
+}
+.runa-desativada {
+    display: none;
+}
+.runaNova {
+    border-radius: 50%;
+}
+
 .botoes {
     float: left;
     position: absolute;
@@ -350,6 +360,15 @@ figure.statusPequeno {
 figure.statusPequeno img.escolhido {
     background-color: #0000003f
 }
+.runaSelecionada {
+    border: 0.2rem var(--tertiary-color) solid;
+    border-radius: 50%;
+}
+
+.naoSelecionado {
+    filter: brightness(50%) opacity(50%);
+}
+
 
 .statusPrincipal section {
     margin-bottom: .3vw
@@ -379,19 +398,19 @@ figure.statusPequeno img.escolhido {
 }
 
 .botao-lutador {
-    background-color:var(--primary-button-color);  /* Cor do botão LUTADOR */
+    background-color:var(--primary-button-color); 
 }
 
 .botao-offtank {
-    background-color: var(--primary-button-color); /* Cor do botão OFFTANK */
+    background-color: var(--primary-button-color); 
 }
-.lutador-arvore {
+.arvore-principal-runas, .arvore-secundaria-runas {
     display: flex;
     padding-top: 5rem;
     margin-left: 35rem;
     margin-top: -15rem;
     gap: 2rem;
-    }
+}
 .runa-selecionada {
     border: 0.2rem var(--tertiary-color) solid;
     border-radius: 50%;
@@ -401,9 +420,10 @@ figure.statusPequeno img.escolhido {
     filter: brightness(50%) opacity(50%);
 }
 
-.lutador-texto {
-    margin-left: 83rem ;
-    margin-top: -40rem;
+.comousar {
+
+    margin-left: 5rem;
+    margin-top: 3.4rem;
     width: 30rem;
 }
 
@@ -416,25 +436,25 @@ figure.statusPequeno img.escolhido {
 
 .footer-content {
     display: flex;
-    align-items: center; 
-    justify-content: space-around; 
+    align-items: center;
+    justify-content: space-around;
     background-color: var(--primary-font-color);
 }
 
 .footer-content p {
-    margin-right: 2rem; 
+    margin-right: 2rem;
     padding-top: 1.5rem;
 }
 
 .footer-content ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
 .footer-content li {
-    margin-left: 1rem; 
+    margin-left: 1rem;
 }
 
 .footer-content li a {
@@ -445,11 +465,13 @@ figure.statusPequeno img.escolhido {
 }
 
 .footer-content li img {
-    margin-right: 0.5rem; 
+    margin-right: 0.5rem;
 }
+
 .close-menu {
     display: none;
 }
+
 .back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -464,4 +486,4 @@ figure.statusPequeno img.escolhido {
     color: var(--primary-color);
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primary-color);
-  }
+}
